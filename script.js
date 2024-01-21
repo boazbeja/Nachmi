@@ -1,6 +1,6 @@
 const musicBox = document.getElementById('music-box-img');
 const oldMan = document.getElementById('old-man-img');
-const music = new Audio('venezuela.mp3');
+const music = new Audio('בצל ירוק - ונצואלה.mp3');
 document.getElementById('play-btn').addEventListener('click', function() {
     music.play();
     oldMan.style.bottom = '5%'; // Makes the old man "stand up"
