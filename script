@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Music Box</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Enchanted Music Box</h1>
+    </header>
+
+    <main>
+        <section id="music-box-container">
+            <div id="music-box-controls">
+                <button id="play-btn">Play</button>
+                <button id="pause-btn">Pause</button>
+                <input type="range" id="volume-control" min="0" max="100" value="50">
+            </div>
+            <img src="music-box.png" alt="Music Box" id="music-box-img">
+            <img src="old-man.png" alt="Old Man" id="old-man-img">
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at <a href="mailto:contact@enchantedmusicbox.com">contact@enchantedmusicbox.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
