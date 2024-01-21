@@ -18,6 +18,32 @@ main {
     align-items: center;
     height: 80%;
 }
+/* Add styles for the city scene and interactive animations */
+#city-background {
+    position: relative;
+    background-image: url('city-scene.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.interactive {
+    animation: idleMovement 5s infinite;
+}
+
+@keyframes idleMovement {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    /* rest of your styles */
+}
 
 #music-box-container {
     position: relative;
