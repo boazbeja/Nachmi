@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #f5f5dc;
+}
+
+header {
+    background: #6a5acd;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+#music-box-container {
+    position: relative;
+}
+
+#music-box-img {
+    width: 50vw;
+    transition: transform 0.5s ease;
+}
+
+#old-man-img {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 15vw;
+    transition: bottom 0.5s ease;
+}
+
+#music-box-controls {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#play-btn, #pause-btn {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#volume-control {
+    cursor: pointer;
+}
+
+footer {
+    background: #6a5acd;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
