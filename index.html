@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enchanted Music Box</title>
+    <title>MAZAL TOV NACHMI</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Enchanted Music Box</h1>
+        <h1>מזל טוב</h1>
     </header>
 
     <main>
-        <section id="music-box-container">
-            <div id="music-box-controls">
-                <button id="play-btn">Play</button>
-                <button id="pause-btn">Pause</button>
-                <input type="range" id="volume-control" min="0" max="100" value="50">
-            </div>
-            <img src="Jpegmusicbox.jpeg" alt="Music Box" id="music-box-img">
-            <img src="full_body_shot.png" alt="Old Man" id="old-man-img">
-        </section>
+       <!-- Include a background image to set the city center scene -->
+<div id="city-background">
+    <img src="city-scene.png" alt="City Scene" id="city-scene-img">
+    <div id="music-box-container">
+        <!-- Music Box Controls -->
+        <div id="controls">
+            <button id="play-btn" onclick="toggleMusic()">Play/Pause</button>
+            <label for="volume-control">Volume:</label>
+            <input type="range" id="volume-control" min="0" max="100" value="50">
+        </div>
+        <!-- Music Box and Old Man Images -->
+        <img src="Jpegmusicbox.jpeg" alt="Music Box" id="music-box-img" class="interactive">
+        <img src="full_body_shot.png" alt="Old Man" id="old-man-img" class="interactive">
+    </div>
+</div>
+
+           
     </main>
 
     <footer>
